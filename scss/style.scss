@@ -38,15 +38,15 @@ body{
     margin: 0 auto;
         @media(max-width: $md) {
             max-width: 936px;
-            padding: 0 10px;
+            padding: 0 20px;
         }
         @media(max-width: $md1) {
             max-width: 767px;
-            padding: 0 10px;
+            padding: 0 20px;
         }
         @media(max-width: $md2) {
             max-width: 560px;
-            padding: 0 10px;
+            padding: 0 20px;
         }
         @media(max-width: $md3) {
             max-width: 375px;
@@ -73,6 +73,13 @@ h1{
     &:hover{
         background: #3b3851;
     }
+    @media(max-width: $md){
+        font-size: 11.6px;
+        min-height: 42px;
+    }
+    @media(max-width: $md2){
+        padding: 0 15px;
+    }
 }
 .btn-ghost {
     display: flex;
@@ -91,6 +98,10 @@ h1{
 
     &:hover {
         background: #3b3851;
+    }
+    @media(max-width: $md) {
+        font-size: 11.6px;
+        min-height: 42px;
     }
 }
 
@@ -156,8 +167,9 @@ h1{
 // Section OFFER ----------------------------------------------------
 .offer {
     &__body {
-        padding: 80px 0 120px;
+        padding: 119px 0 120px;
         display: flex;
+        position: relative;
     }
 
     &__info {
@@ -166,9 +178,27 @@ h1{
     }
 
     &__image {
-        padding: 70px 0px 0 90px;
+        padding: 30px 0px 0 90px;
         position: relative;
+        &::before {
+                content: "";
+                position: absolute;
+                background:url('../img/offer/lines1.svg')no-repeat center center/contain ;
+                width: 42px;
+                height: 28px;
+                top: -60px;
+                right: -40px;
+            }
         
+            &::after {
+                content: "";
+                position: absolute;
+                background: url('../img/offer/lines2.svg')no-repeat center center/contain;
+                width: 39px;
+                height: 37px;
+                bottom: -50px;
+                left: 35px;
+            }
     }
 }
 
@@ -202,6 +232,9 @@ h1{
         line-height: 120%;
         letter-spacing: -3px;
         margin-bottom: 16px;
+    }
+    &__title_mobile{
+        display: none;
     }
     &__title span{
         color: #5C4EAE;
@@ -271,33 +304,28 @@ h1{
         display: block;
         margin: 0 auto;
         &::after{
-            content: "";
+            content: '';
             position: absolute;
-            background: url(../img/offer/plate.png) no-repeat center center;
+            background: url(../img/offer/plate.png) no-repeat center center/contain;
             width: 430px;
             height: 445px;
             top:8px;
             left: -28px;
-
         }
-    }
-    &__hero {
-        // position: relative;
-                        // &::before {
-                        //         content: "";
-                        //         width: 460px;
-                        //         height: 424px;
-                        //         border-radius: 424px;
-                        //         background: linear-gradient(137deg, #6C5FBC 0%, #5144A0 100%);
-                        //         position: absolute;
-                        //         top: 0;
-                        //         left: 0;
-                        //     }
+        &::before{
+            content: "";
+            position: absolute;
+            background: url('../img/offer/arrow.svg') no-repeat center center/contain;
+            width: 101px;
+            height: 98px;
+            top: 50px;
+            right: -60px;
+        }
     }
 
     &__top {
         position: absolute;
-        top: 5px;
+        top: -30px;
         right: 0;
         border-radius: 16.4px;
         box-shadow: (-9.843755722045898px 12.304695129394531px 20.50782585144043px rgba(0, 0, 0, 0.15));
@@ -306,11 +334,122 @@ h1{
 
     &__bottom {
         position: absolute;
-        bottom: -40px;
-        left: 50px;
+        bottom: -15px;
+        left: 70px;
         border-radius: 16.4px;
         box-shadow: (13.407440185546875px -16.759300231933594px 27.93216896057129px rgba(0, 0, 0, 0.15));
 
+    }
+}
+// Block--------------------------------------------------
+.block {
+    background: #5C4EAE;
+    &__row {
+        padding: 49px 152px;
+        display: flex;
+        margin: 0px -132px;
+    }
+    &__column {
+        padding: 0px 88px;
+        flex: 0 1 33.333%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__quantly {
+        font-family: Public Sans;
+        @include fonts(43.2px,700);
+        line-height: 125%;
+        color: #fff;
+        margin-bottom: 10.8px;
+    }
+
+    &__text {
+        color: #C5BFED;
+        text-align: center;
+        font-family: Inter;
+        @include fonts(14.4px,500);
+        line-height: 150%;
+    }
+}
+// Section BENEFITS------------------------------------------------------
+.benefits {
+    &__body {
+        padding: 120px 30px 120px 111px;
+        border-bottom: 1px solid #CBCBCB;
+        display: flex;
+    }
+
+    &__image {
+        flex: 0 0 50%;
+    }
+
+    &__img {}
+
+    &__info {
+        flex: 0 1 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title {
+        font-family: Poppins;
+        @include fonts(51px,700);
+        line-height: 114%;
+        color: $bgBlack;
+        margin-bottom: 63px;
+    }
+    &__title span{
+        color: $bgBlue;
+    }
+
+    &__items {
+        margin-bottom: 66px;
+    }
+
+    &__item {
+        font-family: Inter;
+        @include fonts(20px,400);
+        line-height: 150%;
+        color: $bgGrey;
+        position: relative;
+        padding-left:20px;
+        &:not(:last-child){
+            margin-bottom: 28px;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 5px;
+            background-color: $bgGrey;
+            top: 10px;
+            left: 0;
+
+        }
+    }
+
+    &__btn {
+        display: flex;
+        width: 186px;
+        @include fonts(18px,500);
+        line-height: 125%;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            background: url('../img/benefits/arrow.svg') no-repeat center center/contain;
+            width: 164px;
+            height: 164px;
+            bottom: -90px;
+            right: -140px;
+        }
+    }
+    &__btn img{
+        margin-left: 15px;
     }
 }
 

@@ -22,6 +22,126 @@
             font-size: 12.7px;
         }
     }
+    // Offer---------------------------------------------
+    .offer{
+        &__body{
+            padding: 84px 0 91px;
+        }
+        .info__text{
+            font-size: 10.7px;
+            margin-bottom: 12.6px;
+        }
+        .info__title{
+            font-size: 53px;
+            margin-bottom: 11.4px;
+        }
+        .info__block{
+            font-size: 12.8px;
+            margin-bottom: 37.4px;
+        }
+        .info__button{
+            margin-bottom: 23.5px;
+        }
+        .info__stars{
+            width: 68px;
+            height: 11px;
+        }
+        .info__name{
+            width: 87.5px;
+            height: 21.5px;
+        }
+        .info__raiting span{
+            font-size: 11.4px;
+        }
+        &__image{
+            &::before{
+                width: 30px;
+                height: 17px;
+                top: -35px;
+                right: -35px;
+            }
+            &::after{
+                width: 27.1px;
+                height: 23.5px;
+                bottom: -40px;
+                left: 45px;
+            }
+        }
+        .image__img{
+            width: 300px;
+            height: 301.5px;
+            border-radius: 301.5px;
+            &::after{
+                width: 305px;
+                height: 315px;
+                top: 5px;
+                left: -20px;
+            }
+            &::before{
+                width: 71.8px;
+                height: 69px;
+                top: 40px;
+                right: -45px;
+            }
+        }
+        .image__top{
+            width: 233px;
+            height: 63.6px;
+            border-radius: 11.7px;
+            top: -15px;
+        }
+        .image__bottom{
+            width: 147px;
+            height: 146px;
+            border-radius: 11.9px;
+
+        }
+    }
+    // Block---------------------------------------------------------
+    .block{
+        &__row{
+            padding: 40px 80px;
+            margin: 0 -94px;
+        }
+        &__column{
+            padding: 0 70px;
+        }
+        &__quantly{
+            font-size: 30.72px;
+            margin-bottom: 7px;
+        }
+        &__text{
+            font-size: 10.2px;
+        }
+    }
+    // Benefits-------------------------------------------
+    .benefits{
+        &__img{
+            width: 216px;
+            height: 433px;
+        }
+        &__title{
+            font-size: 36px;
+            margin-bottom: 45px;
+        }
+        &__items{
+            margin-bottom: 46px;
+        }
+        &__item{
+            font-size: 14px;
+            &:not(:last-child){
+                margin-bottom: 19px;
+            }
+        }
+        &__btn{
+            &::after{
+                width: 104px;
+                height: 61px;
+                bottom: -40px;
+                right: -80px;
+            }
+        }
+    }
 }
 
 
@@ -33,7 +153,45 @@
             margin-left: 180px;
         }
     }
-}
+    // Offer---------------------------------------------
+    .offer{
+        &__image{
+            padding-left: 0;
+            &::before{
+                right: -15px;
+            }
+            &::after{
+                bottom: -5px;
+                left: 5px;
+            }
+        }
+        .image__top{
+            right: 10px;
+        }
+        .image__bottom{
+            bottom: 15px;
+            left: 30px;
+        }
+    }
+    // Block--------------------------------------------------
+    .block {
+        &__row {
+            padding: 40px 20px;
+            margin: 0 -20px;
+        }
+
+        &__column {
+            padding: 10px;
+        }
+    }
+    // Benefits-----------------------------------------------
+    .benefits{
+        &__body{
+            padding: 90px 10px;
+        }
+    }
+ }
+
 
 
 // width: 561px - 766px
@@ -50,8 +208,40 @@
         .nav-menu__item:not(:last-child){
             margin-right: 18px;
         }
-        .nav-menu__link{
-            
+    }
+    // Offer------------------------------------------
+    .offer{
+        &__body{
+            flex-direction: column;
+
+        }
+        &__info{
+            margin-bottom: 50px;
+        }
+        &__image{
+            padding: 0;
+            &::after{
+                bottom: -65px;
+            }
+        }
+        .image__bottom{
+            bottom: -45px;
+        }
+    }
+    // Block--------------------------------------------------
+    .block{
+        &__row{
+            padding: 40px 0;
+            margin: 0 -10px;
+        }
+    }
+    // Benefits--------------------------------------------------
+    .benefits{
+        &__btn{
+            font-size: 11.5px;
+        }
+        &__btn img{
+            width: 15%;
         }
     }
 }
@@ -146,6 +336,133 @@
         }
         .nav-menu{
             justify-content: center;
+        }
+    }
+    // Offer------------------------------------------
+    .offer{
+        &__body{
+            padding: 57px 0 75px;
+        }
+        &__info{
+            margin-bottom: 78px;
+        }
+        .info__text{
+            font-size: 9.2px;
+            margin-bottom: 5px;
+            text-align: center;
+            color: #201F1F;
+            &::before{
+                width: 33.2px;
+                height: 0.6px;
+                opacity: 1;
+                left: 70px;
+            }
+        }
+        .info__title{
+            display: none;
+        }
+        .info__title_mobile{
+            display: block;
+            font-size: 46.2px;
+            margin-bottom: 15.77px;
+            text-align: center;
+        }
+        .info__block{
+            font-size: 11.1px;
+            margin-bottom: 21px;
+            text-align: center;
+            width: 100%;
+        }
+        .info__button{
+            justify-content: center;
+        }
+        .info__raiting{
+            justify-content: center;
+        }
+        &__image{
+            &::before{
+                width: 20px;
+                height: 11px;
+                right: -10px;
+                top: -40px;
+            }
+            &::after{
+                width: 18px;
+                height: 16px;
+                left: 15px;
+                bottom: -60px;
+            }
+        }
+        .image__top{
+            width: 156px;
+            height: 42px;
+            top: -30px;
+        }
+        .image__bottom{
+            width: 98px;
+            height: 97px;
+        }
+        .image__img{
+            width: 200px;
+            height: 201px;
+            border-radius: 201px;
+            &::after{
+                width: 203px;
+                height: 210px;
+                left: -12px;
+            }
+            &::before{
+                width: 47px;
+                height: 46px;
+                top: 10px;
+                right: -20px;
+            }
+        }
+    }
+    // Block------------------------------------------
+    .block{
+        &__row{
+            flex-direction: column;
+            padding: 95px 50px;
+        }
+        &__column{
+            position: relative;
+            &:not(:last-child){
+                margin-bottom: 120px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 0.5px;
+                    opacity: 0.15;
+                    background: #C5C5C5;
+                    bottom: -60px;
+                    left: 0;
+                }
+            }
+        }
+    }
+    // Benefits-----------------------------------------
+    .benefits{
+        &__body{
+            flex-direction: column-reverse;
+            padding: 67px 10px;
+            align-items: center;
+        }
+        &__btn{
+            margin: 0 auto;
+            margin-bottom: 110px;
+            &::after{
+                width: 204px;
+                height: 41px;
+                right: 0;
+                left: -130px;
+                transform: rotate(110deg);
+                bottom: -60px;
+            }
+        }
+        &__title{
+            text-align: center;
         }
     }
 }
