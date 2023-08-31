@@ -488,6 +488,215 @@ h1 {
   margin-left: 15px;
 }
 
+.restaurants__body {
+  padding: 100px 0 120px;
+  border-bottom: 1px solid #CBCBCB;
+}
+.restaurants__title {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 56.8%;
+  margin-bottom: 85px;
+  text-align: center;
+}
+.restaurants__title span {
+  color: #6C5FBC;
+}
+.restaurants__cards {
+  display: flex;
+  margin-bottom: 66px;
+}
+.restaurants__link {
+  color: #ACADB9;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 226%;
+  letter-spacing: -0.1px;
+  display: flex;
+  justify-content: flex-end;
+}
+.restaurants__link img {
+  margin-left: 10px;
+}
+
+.cards__card {
+  flex: 0 1 30.333%;
+  border-radius: 30.23px;
+  box-shadow: 5.9456415176px 71.347694397px 35.6738471985px 0px rgba(229, 229, 229, 0.7);
+}
+.cards__card:not(:last-child) {
+  margin-right: 30px;
+}
+
+.card__img {
+  border-radius: 30.023px 30.023px 0px 0px;
+}
+.card__block {
+  display: flex;
+  background: #fff;
+  border-radius: 0px 0px 30.023px 30.023px;
+  padding: 11px 17px 18px 33px;
+}
+.card__info {
+  font-size: 12.8px;
+  font-weight: 400;
+  font-family: Poppins;
+  line-height: 150%;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5.4px;
+}
+.card__info_card1, .card__info_card3 {
+  color: #DAA31A;
+  background-color: #F7EDD0;
+}
+.card__info_card2 {
+  color: #FB471D;
+  background-color: #F7C5BA;
+}
+.card__title {
+  color: #323142;
+  font-size: 25.8px;
+  font-weight: 600;
+  line-height: 163%;
+}
+.card__row {
+  display: flex;
+}
+.card__text, .card__grade {
+  color: #8E97A6;
+  font-family: Manrope;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 133%;
+}
+.card__text {
+  margin-right: 6.5px;
+}
+.card__icon {
+  margin-right: 6.5px;
+}
+.card__bookmark {
+  display: block;
+  margin-left: auto;
+  margin-top: auto;
+  background: #DBD9EE;
+  padding: 8px 10px;
+  border-radius: 40.085px;
+}
+
+.dishes__body {
+  padding: 100px 0 120px;
+}
+.dishes__title {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 56.8%;
+  margin-bottom: 85px;
+  text-align: center;
+}
+.dishes__title span {
+  color: #6C5FBC;
+}
+.dishes__cards {
+  margin-bottom: 65px;
+  display: flex;
+}
+.dishes__card {
+  flex: 0 1 20%;
+  border-radius: 34.581px;
+  box-shadow: 6.8484177589px 82.1810150146px 41.0905075073px 0px rgba(229, 229, 229, 0.7);
+}
+.dishes__card:not(:last-child) {
+  margin-right: 30px;
+}
+.dishes__link {
+  color: #ACADB9;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 226%;
+  letter-spacing: -0.1px;
+  display: flex;
+  justify-content: flex-end;
+}
+.dishes__link img {
+  margin-left: 10px;
+}
+
+.dish {
+  padding: 20px;
+}
+.dish__heart {
+  display: block;
+  margin-left: auto;
+  margin-bottom: -15px;
+}
+.dish__info {
+  font-size: 12.8px;
+  font-weight: 400;
+  font-family: Poppins;
+  line-height: 150%;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5.4px;
+}
+.dish__info_dish2, .dish__info_dish5 {
+  color: #FB471D;
+  background-color: #F7C5BA;
+}
+.dish__info_dish1, .dish__info_dish4 {
+  color: #DAA31A;
+  background-color: #F7EDD0;
+}
+.dish__info_dish3 {
+  color: #309D5B;
+  background-color: rgba(51, 172, 100, 0.231372549);
+}
+.dish__title {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 162.5%;
+  color: #323142;
+}
+.dish__row {
+  display: flex;
+  margin-bottom: 13px;
+}
+.dish__text, .dish__grade {
+  color: #8E97A6;
+  font-family: Manrope;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 133%;
+}
+.dish__text {
+  margin-right: 6.5px;
+}
+.dish__icon {
+  margin-right: 6.5px;
+}
+.dish__check {
+  display: flex;
+  justify-content: space-between;
+  font-family: Manrope;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 155%;
+  color: #8E97A6;
+}
+.dish__check strong {
+  font-size: 26px;
+  font-weight: 700;
+  color: #323142;
+}
+.dish__add {
+  border-radius: 8.93px;
+  background: #323142;
+  padding: 12px 14px;
+}
+
 @media screen and (max-width: 1224px) {
   .header__nav {
     margin-left: 37px;
@@ -614,6 +823,96 @@ h1 {
     bottom: -40px;
     right: -80px;
   }
+  .restaurants__body {
+    padding: 71px 0 85px;
+  }
+  .restaurants__title {
+    font-size: 32px;
+    margin-bottom: 60px;
+  }
+  .restaurants__cards {
+    margin-bottom: 46px;
+  }
+  .restaurants__link {
+    font-size: 14px;
+    letter-spacing: -0.071px;
+  }
+  .restaurants__link img {
+    width: 2%;
+  }
+  .restaurants .cards__card {
+    border-radius: 21.35px;
+    box-shadow: 4.2280101776px 50.7361297607px 25.3680648804px 0px rgba(229, 229, 229, 0.7);
+  }
+  .restaurants .card__img {
+    width: 282px;
+  }
+  .restaurants .card__block {
+    padding: 9px 12px 12px 24px;
+  }
+  .restaurants .card__info {
+    font-size: 9px;
+    border-radius: 3.84px;
+    padding: 2px 3px;
+  }
+  .restaurants .card__title {
+    font-size: 18px;
+  }
+  .restaurants .card__text,
+  .restaurants .card__grade {
+    font-size: 13.75px;
+  }
+  .restaurants .card__icon {
+    width: 11%;
+  }
+  .restaurants .card__bookmark {
+    width: 13%;
+  }
+  .dishes__card:not(:last-child) {
+    margin-right: 21px;
+  }
+  .dishes__link {
+    font-size: 14.2px;
+  }
+  .dishes__link img {
+    width: 2%;
+  }
+  .dishes .dish {
+    padding: 12px;
+  }
+  .dishes .dish__heart {
+    margin-bottom: 0;
+  }
+  .dishes .dish__img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .dishes .dish__info {
+    font-size: 8px;
+    padding: 0px 3px;
+  }
+  .dishes .dish__title {
+    font-size: 16.4px;
+  }
+  .dishes .dish__text,
+  .dishes .dish__grade {
+    font-size: 12.3px;
+  }
+  .dishes .dish__icon {
+    width: 14%;
+    margin-right: 4px;
+  }
+  .dishes .dish__check {
+    font-size: 13.4px;
+  }
+  .dishes .dish__check strong {
+    font-size: 18.4px;
+  }
+  .dishes .dish__add {
+    width: 17%;
+    padding: 5px 6px;
+  }
 }
 @media screen and (max-width: 936px) {
   .header__block {
@@ -645,6 +944,18 @@ h1 {
   }
   .benefits__body {
     padding: 90px 10px;
+  }
+  .restaurants__body {
+    padding: 60px 0;
+  }
+  .restaurants .card__block {
+    padding: 9px;
+  }
+  .restaurants .card__img {
+    width: 220px;
+  }
+  .restaurants .card__bookmark {
+    width: 16%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -682,6 +993,24 @@ h1 {
   }
   .benefits__btn img {
     width: 15%;
+  }
+  .restaurants__cards {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .restaurants__link img {
+    width: 3%;
+  }
+  .restaurants .cards__card:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .restaurants .card__img {
+    width: 100%;
+  }
+  .restaurants .card__bookmark {
+    width: 9%;
   }
 }
 @media screen and (max-width: 560px) {
@@ -873,5 +1202,14 @@ h1 {
   }
   .benefits__title {
     text-align: center;
+  }
+  .restaurants__title {
+    line-height: 150%;
+  }
+  .restaurants .cards__card {
+    box-shadow: 4.7295765877px 56.7549171448px 28.3774585724px 0px rgba(229, 229, 229, 0.7);
+  }
+  .restaurants .card__bookmark {
+    width: 11%;
   }
 }

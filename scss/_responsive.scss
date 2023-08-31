@@ -142,6 +142,107 @@
             }
         }
     }
+    // Restaurant-----------------------------------------
+    .restaurants{
+        &__body{
+            padding: 71px 0 85px;
+        }
+        &__title{
+            font-size: 32px;
+            margin-bottom: 60px;
+        }
+        &__cards{
+            margin-bottom: 46px;
+        }
+        &__link{
+            font-size: 14px;
+            letter-spacing: -0.071px;
+        }
+        &__link img{
+            width: 2%;
+        }
+        .cards__card{
+            border-radius: 21.35px;
+            box-shadow: 4.228010177612305px 50.73612976074219px 25.368064880371094px 0px rgba(229, 229, 229, 0.70);
+        }
+        .card__img{
+            width: 282px;
+        }
+        .card__block{
+            padding: 9px 12px 12px 24px;
+        }
+        .card__info{
+            font-size: 9px;
+            border-radius: 3.84px;
+            padding: 2px 3px;
+        }
+        .card__title{
+            font-size: 18px;
+        }
+        .card__text,
+        .card__grade{
+            font-size: 13.75px;
+        }
+        .card__icon{
+            width: 11%;
+        }
+        .card__bookmark{
+            width: 13%;
+        }
+    }
+    // Dishes
+    .dishes{
+        &__card{
+            &:not(:last-child){
+                margin-right: 21px;
+            }
+        }
+        &__link{
+            font-size: 14.2px;
+        }
+        &__link img{
+            width: 2%;
+        }
+        .dish{
+            padding: 12px;
+            
+        }
+        .dish__heart{
+            margin-bottom: 0;
+        }
+        .dish__img{
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+        .dish__info{
+            font-size: 8px;
+            padding: 0px 3px;
+        }
+        .dish__title{
+            font-size: 16.4px;
+        }
+        .dish__text,
+        .dish__grade{
+            font-size: 12.3px;
+        }
+        .dish__icon{
+            width: 14%;
+            margin-right: 4px;
+        }
+        .dish__check{
+            font-size: 13.4px;
+        }
+        .dish__check strong{
+            font-size: 18.4px;
+        }
+        .dish__add{
+            width: 17%;
+            padding: 5px 6px;
+        }
+
+    }
+
 }
 
 
@@ -188,6 +289,21 @@
     .benefits{
         &__body{
             padding: 90px 10px;
+        }
+    }
+    // Restaurants
+    .restaurants{
+        &__body{
+            padding: 60px 0;
+        }
+        .card__block{
+            padding: 9px;
+        }
+        .card__img{
+            width: 220px;
+        }
+        .card__bookmark{
+            width: 16%;
         }
     }
  }
@@ -242,6 +358,29 @@
         }
         &__btn img{
             width: 15%;
+        }
+    }
+    // Restaurants---------------------------------------------
+    .restaurants{
+        &__cards{
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        &__link img {
+            width: 3%;
+        }
+        .cards__card{
+            &:not(:last-child){
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+        }
+        .card__img{
+            width: 100%;
+        }
+        .card__bookmark{
+            width: 9%;
         }
     }
 }
@@ -465,4 +604,17 @@
             text-align: center;
         }
     }
+    // Restaurants
+    .restaurants{
+        &__title{
+            line-height: 150%;
+        }
+        .cards__card{
+            box-shadow: 4.729576587677002px 56.75491714477539px 28.377458572387695px 0px rgba(229, 229, 229, 0.70);
+        }
+        .card__bookmark{
+            width: 11%;
+        }
+    }
+    
 }

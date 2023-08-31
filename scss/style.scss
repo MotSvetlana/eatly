@@ -452,6 +452,249 @@ h1{
         margin-left: 15px;
     }
 }
+// Restaurants--------------------------------------------------------------
+.restaurants {
+
+    &__body {
+        padding: 100px 0 120px;
+        border-bottom: 1px solid #CBCBCB;
+    }
+
+    &__title {
+        @include fonts(45px,600);
+        line-height: 56.8%;
+        margin-bottom: 85px;
+        text-align: center;
+    }
+    &__title span{
+        color: $bgBlue;
+    }
+
+    &__cards {
+        display: flex;
+        margin-bottom: 66px;
+    }
+
+    &__link {
+        color:#ACADB9;
+        font-family: Poppins;
+        @include fonts(20px,500);
+        line-height: 226%;
+        letter-spacing: -0.1px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__link img{
+        margin-left: 10px;
+    }
+}
+
+.cards {
+    &__card {
+        flex: 0 1 30.333%;
+        border-radius: 30.23px;
+        box-shadow: 5.94564151763916px 71.34769439697266px 35.67384719848633px 0px rgba(229, 229, 229, 0.70);
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+}
+
+.card {
+    &__img {
+        border-radius: 30.023px 30.023px 0px 0px;
+        }
+    &__block{
+        display: flex;
+        background: #fff;
+        border-radius: 0px 0px 30.023px 30.023px ;
+        padding: 11px 17px 18px 33px;
+    }
+    &__body {
+        }
+    
+    &__info {
+        @include fonts(12.8px,400);
+        font-family: Poppins;
+        line-height: 150%;
+        display: inline-block;
+        padding: 5px;
+        border-radius: 5.4px;
+    }
+    &__info_card1,
+    &__info_card3{
+        color: #DAA31A;
+        background-color: #F7EDD0;
+    }
+    &__info_card2{
+        color: #FB471D;
+        background-color: #F7C5BA;
+    }
+
+    &__title {
+        color: #323142;
+        @include fonts(25.8px,600);
+        line-height: 163%;
+    }
+
+    &__row {
+        display: flex;
+    }
+
+    &__text,
+    &__grade {
+        color: #8E97A6;
+        font-family: Manrope;
+        @include fonts(19px,400);
+        line-height: 133%;
+    }
+    &__text{
+        margin-right: 6.5px;
+    }
+
+    &__icon {
+        margin-right: 6.5px;
+    }
+
+    &__bookmark {
+        display: block;
+        margin-left: auto;
+        margin-top: auto;
+        background: #DBD9EE;
+        padding: 8px 10px;
+        border-radius: 40.085px;
+    }
+}
+// Dishes--------------------------------------------------------
+.dishes {
+
+    &__body {
+        padding: 100px 0 120px
+    }
+
+    &__title {
+        @include fonts(45px, 600);
+        line-height: 56.8%;
+        margin-bottom: 85px;
+        text-align: center;
+    }
+
+    &__title span {
+        color: $bgBlue;
+    }
+
+    &__cards {
+        margin-bottom: 65px;
+        display: flex;
+    }
+
+    &__card {
+        flex: 0 1 20%;
+        border-radius: 34.581px;
+        box-shadow: 6.84841775894165px 82.18101501464844px 41.09050750732422px 0px rgba(229, 229, 229, 0.70);
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+
+
+    &__link {
+        color: #ACADB9;
+        font-family: Poppins;
+        @include fonts(20px, 500);
+        line-height: 226%;
+        letter-spacing: -0.1px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__link img {
+        margin-left: 10px;
+    }
+}
+
+.dish {
+    padding: 20px;
+    &__heart {
+        display: block;
+        margin-left: auto;
+        margin-bottom: -15px;
+    }
+    
+    &__img {}
+
+    &__body {
+        
+    }
+
+    &__info {
+        @include fonts(12.8px, 400);
+        font-family: Poppins;
+        line-height: 150%;
+        display: inline-block;
+        padding: 5px;
+        border-radius: 5.4px;
+    }
+    &__info_dish2,
+    &__info_dish5 {
+        color: #FB471D;
+        background-color: #F7C5BA;
+    }
+    &__info_dish1,
+    &__info_dish4 {
+        color: #DAA31A;
+        background-color: #F7EDD0;
+    }
+    &__info_dish3{
+        color: #309D5B;
+        background-color: #33ac643b;
+    }
+
+    &__title {
+        @include fonts(23px,600);
+        line-height: 162.5%;
+        color: #323142;
+    }
+
+    &__row {
+        display: flex;
+        margin-bottom: 13px;
+    }
+
+    &__text,
+    &__grade {
+        color: #8E97A6;
+        font-family: Manrope;
+        @include fonts(19px, 400);
+        line-height: 133%;
+    }
+
+    &__text {
+        margin-right: 6.5px;
+    }
+
+    &__icon {
+        margin-right: 6.5px;
+    }
+    &__check {
+        display: flex;
+        justify-content: space-between;
+        font-family: Manrope;
+        @include fonts(19px,700);
+        line-height: 155%;
+        color: #8E97A6;
+    }
+    &__check strong{
+        @include fonts(26px, 700);
+        color: #323142;
+    }
+
+    &__add {
+        border-radius: 8.93px;
+        background: #323142;
+        padding: 12px 14px;
+    }
+}
 
 @import "_responsive";
 
