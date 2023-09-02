@@ -1,50 +1,51 @@
-// const swiper = new Swiper('.swiper', {
-//     // Optional parameters
-//     loop: true,
-//     slidesPerView: 1,
-//     slidesPerGroup: 1,
+const swiper = new Swiper('.slider__swiper', {
+    // Optional parameters
+    
+    slidesPerView: 1,
+    spaceBetween: 35,
+    loop: true,
+    stopOnLastSlide: false,
+    // autoplay: {
+    //     delay: 3000,
+    // },
 
 
-//     breakpoints: {
-//         561: {
-//             slidesPerView: 2,
-//             slidesPerGroup: 2,
-//             spaceBetween: 10,
-//         },
-//         768: {
-//             slidesPerView: 3,
-//             slidesPerGroup: 3,
-//             spaceBetween: 10,
-//         },
+    breakpoints: {
+        // 561: {
+        //     slidesPerView: 2,
+        //     slidesPerGroup: 2,
+        //     spaceBetween: 10,
+        // },
+        // 768: {
+        //     slidesPerView: 3,
+        //     slidesPerGroup: 3,
+        //     spaceBetween: 10,
+        // },
 
-//         991: {
-//             slidesPerView: 4,
-//             slidesPerGroup: 4,
-//             spaceBetween: 10,
-//         },
-//         1170: {
-//             slidesPerView: 4,
-//             slidesPerGroup: 4,
-//             spaceBetween: 30,
-//         },
-//     },
+        561: {
+            slidesPerView: 2,
+            spaceBetween: 32,
+        },
+        1025: {
+            slidesPerView: 2,
+            spaceBetween: 35,
+                // disableOnInteraction: false,
+            },
+        },
+    
 
-//     // If we need pagination
-//     pagination: {
-//         el: '.swiper-pagination',
-//     },
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
 
-//     // Navigation arrows
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
 
-//     // And if we need scrollbar
-//     scrollbar: {
-//         el: '.swiper-scrollbar',
-//     },
-// });
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
 
 // Фиксированная шапка
 // window.onscroll = function () {

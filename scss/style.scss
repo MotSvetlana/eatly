@@ -53,8 +53,21 @@ body{
             padding: 0 10px;
         }
 }
-h1{
+h1,h2,h3,h4{
     font-family: 'Poppins', sans-serif;
+}
+h3 {
+    @include fonts(45px, 600);
+    line-height: 56.8%;
+    margin-bottom: 85px;
+    text-align: center;
+    @media(max-width: $md) {
+            font-size: 32px;
+            margin-bottom: 60px;
+        }
+    @media(max-width: $md){
+        font-size: 30px;
+    }
 }
 .btn {
     display: flex;
@@ -460,12 +473,6 @@ h1{
         border-bottom: 1px solid #CBCBCB;
     }
 
-    &__title {
-        @include fonts(45px,600);
-        line-height: 56.8%;
-        margin-bottom: 85px;
-        text-align: center;
-    }
     &__title span{
         color: $bgBlue;
     }
@@ -569,14 +576,8 @@ h1{
 .dishes {
 
     &__body {
-        padding: 100px 0 120px
-    }
-
-    &__title {
-        @include fonts(45px, 600);
-        line-height: 56.8%;
-        margin-bottom: 85px;
-        text-align: center;
+        padding: 100px 0 120px;
+        border-bottom: 1px solid #CBCBCB;
     }
 
     &__title span {
@@ -695,7 +696,138 @@ h1{
         padding: 12px 14px;
     }
 }
+// Slider---------------------------------------------------------
+.slider {
 
+    &__body {
+        padding: 116px 0 197px;
+    }
+
+    &__title span{
+        color: $bgBlue;
+    }
+
+    &__swiper {
+        padding: 10px 15px;
+    }
+
+}
+
+.swiper {
+    &__cards {
+        display: flex;
+        padding-bottom: 20px;
+    }
+}
+
+.swiper-wrapper {}
+
+
+.swiper-slide, 
+.slide {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    padding: 38px 43px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(221, 221, 221, 1);
+        &__row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 32px;
+            display: none;
+        }
+        
+        &__img {
+            border-radius: 41.8px;
+            margin-right: 20.9px;
+        }
+    
+        &__info {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__name {
+            color: #030314;
+            font-family: Poppins;
+            @include fonts(21px,500);
+            font-size: 20.893px;
+            line-height: 150%;
+        }
+    
+        &__text {
+            color: #5E5D5D;
+            font-family: Quicksand;
+            @include fonts(16.7px,500);
+            line-height: 156%;
+        }
+    
+        &__icon {
+            margin-left: auto;
+        }
+    
+        &__review {
+            color: #636363;
+            font-family: Poppins;
+            @include fonts(18px,400);
+            font-style: italic;
+            line-height: 145%;
+            margin-bottom: 39px;
+        }
+    
+        &__rait {
+            width: 138px;
+        }
+}
+.swiper-slide-active
+.slide {
+    &__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    }
+}
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: var(--swiper-pagination-bottom, 28px);
+    left: 52%;
+    width: 48%;
+    text-align: start;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 0px);
+}
+.swiper-pagination-bullet{
+    width: 20%;
+    border-radius: var(--swiper-pagination-bullet-border-radius, 13%);
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+    background: var(--swiper-pagination-bullet-inactive-color, #6C5FBC);
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
+}
+.swiper-pagination-bullet-active{
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #6C5FBC;
+    // color: #6C5FBC;
+}
+.swiper-horizontal>.swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+    position: absolute;
+    left: var(--swiper-scrollbar-sides-offset, 45%);
+    bottom: var(--swiper-scrollbar-bottom, 34px);
+    top: var(--swiper-scrollbar-top, auto);
+    z-index: 50;
+    height: var(--swiper-scrollbar-size, 11px);
+    width: calc(100% - 3 * var(--swiper-scrollbar-sides-offset, 15%));
+    border-radius: 50px;
+    background-color: $bgBlue;
+    opacity: 0.2;
+    display: none;
+}
+.swiper-scrollbar-drag{
+    background-color: #030314;
+}
 @import "_responsive";
 
 
