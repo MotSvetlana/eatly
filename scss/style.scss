@@ -700,7 +700,7 @@ h3 {
 .slider {
 
     &__body {
-        padding: 116px 0 197px;
+        padding: 116px 0 110px;
     }
 
     &__title span{
@@ -827,6 +827,75 @@ h3 {
 }
 .swiper-scrollbar-drag{
     background-color: #030314;
+}
+// Coupon-------------------------------------------------------
+.coupon {
+    &__body {
+        padding: 87px 0 153.6px;
+    }
+    &__row{
+        background: $bgBlue url('../img/coupon/fon.png');
+        border-radius: 21.33px;
+        padding: 26px 50px 46px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        color: #FFF;
+        font-family: Poppins;
+        @include fonts(70px,800);
+        line-height: normal;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+    }
+
+    &__form {
+        display: flex;
+        border-radius: 10.122px;
+        background-color: #FFF;
+        align-items: center;
+        padding-right: 5px;
+        width: 453px;
+    }
+
+    &__image {
+        margin-top: 37px;
+        margin-bottom: -80px;
+    }
+
+    &__img {}
+}
+
+.coupon-email {
+    flex: 1 1 auto;
+    min-height: 48.4px;
+    padding: 0 15.6px;
+    border-radius: 10.122px;
+    color: #878787; 
+    @include fonts(16.3px, 400);
+    letter-spacing: 0.488px;
+}
+
+.coupon-btn {
+    border-radius: 8.002px;
+    background: $bgBlue;
+    display: flex;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F7F8FA;
+    padding: 10px 18px;
+    font-family: Poppins;
+    @include fonts(14.7px,500);
+    letter-spacing: 0.315px;
+    text-transform: uppercase;
 }
 @import "_responsive";
 
