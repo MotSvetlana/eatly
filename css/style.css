@@ -988,7 +988,7 @@ h3 {
   border-radius: 10.122px;
   background-color: #FFF;
   align-items: center;
-  padding-right: 5px;
+  padding-right: 10px;
   width: 453px;
 }
 
@@ -999,7 +999,7 @@ h3 {
 .coupon-email {
   flex: 1 1 auto;
   min-height: 48.4px;
-  padding: 0 15.6px;
+  padding: 0 5px;
   border-radius: 10.122px;
   color: #878787;
   font-size: 16.3px;
