@@ -611,7 +611,7 @@ h3 {
   display: flex;
   margin-bottom: 66px;
   transition: all 1.5s ease;
-  transform: translate(-120%, 0%);
+  transform: translate(-150%, 0%);
 }
 .restaurants__cards._active {
   transition: all 1.5s ease 0.5s;
@@ -990,6 +990,7 @@ h3 {
   align-items: center;
   padding-right: 10px;
   width: 453px;
+  justify-content: space-between;
 }
 
 .form__row.error {
@@ -997,7 +998,6 @@ h3 {
 }
 
 .coupon-email {
-  flex: 1 1 auto;
   min-height: 48.4px;
   padding: 0 5px;
   border-radius: 10.122px;
@@ -1170,6 +1170,7 @@ h3 {
   transform: translate(-50%) rotate(45deg);
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
 .social .social__icon:hover .social__name {
   background-color: #6C5FBC;
   top: -45px;

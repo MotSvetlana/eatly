@@ -99,7 +99,6 @@
             width: 147px;
             height: 146px;
             border-radius: 11.9px;
-
         }
     }
     // Block---------------------------------------------------------
@@ -198,7 +197,6 @@
                 margin-right: 21px;
             }
         }
-        
         &__link{
             font-size: 14.2px;
         }
@@ -207,7 +205,6 @@
         }
         .dish{
             padding: 12px;
-            
         }
         .dish__heart{
             width: 11%;
@@ -243,7 +240,6 @@
             width: 17%;
             padding: 5px 6px;
         }
-
     }
     // Slider-----------------------------------------------
     .slider{
@@ -271,9 +267,6 @@
         .slide__rait{
             width: 98px;
         }
-        .swiper-pagination-bullet{
-            // width: 100px;
-        }
     }
     // Coupon-------------------------------------
     .coupon{
@@ -291,7 +284,6 @@
         }
     }
 }
-
 
 // width: 767px - 936px
 @media screen and (max-width: $md1) {
@@ -327,7 +319,6 @@
             padding: 40px 20px;
             margin: 0 -20px;
         }
-
         &__column {
             padding: 10px;
         }
@@ -376,8 +367,6 @@
     }
  }
 
-
-
 // width: 561px - 766px
 @media screen and (max-width: $md2) {
     // Header-------------------------------------
@@ -397,7 +386,6 @@
     .offer{
         &__body{
             flex-direction: column;
-
         }
         &__info{
             margin-bottom: 50px;
@@ -531,9 +519,7 @@
                 &:not(:last-child) {
                     margin-right: 20px;
                 }
-    
             }
-    
             &__link {
                 @include fonts(12.7px, 500);
             }
@@ -543,12 +529,10 @@
                 &:not(:last-child) {
                     margin-right: 20px;
                 }
-
                 &:last-child {
                     margin-right: 10px;
                 }
             }
-
             &__img {
                 width: 15px;
                 height: 15px;
@@ -556,7 +540,6 @@
         }
     }
 }
-
 
 // width: 320px - 560px
 @media screen and (max-width: $md3) {
@@ -578,7 +561,6 @@
             z-index: 1000;
             cursor: pointer;
         }
-
         &__burger span,
         &__burger::before,
         &__burger::after {
@@ -589,34 +571,27 @@
             transition: all 0.3s ease 0s;
             background: #6e6565;
         }
-
         &__burger::before,
         &__burger::after {
             content: "";
         }
-
         &__burger::before {
             top: 0;
         }
-
         &__burger::after {
             bottom: 0;
         }
-
         &__burger span {
             top: 50%;
             transform: scale(1) translate(0px, -80%);
         }
-
         &__burger.active span {
             transform: scale(0) translate(0px, -80%);
         }
-
         &__burger.active::before {
             top: 50%;
             transform: rotate(-40deg) translate(0px, -80%);
         }
-
         &__burger.active::after {
             bottom: 50%;
             transform: rotate(40deg) translate(0px, 80%);
@@ -637,12 +612,10 @@
             align-items: center;
             flex-direction: column;
         }
-
         &__navigation.active {
             left: 0;
             z-index: 100;
         }
-
         .nav__item:not(:last-child) {
             margin-bottom: 0px;
         }
@@ -894,8 +867,6 @@
             font-size: 10px;
             margin-top: -15px;
         }
-        
-
     }
     // Footer
     .footer{

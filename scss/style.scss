@@ -119,8 +119,6 @@ h3 {
     }
 }
 
-
-
 // Header--------------------------------------------------------------
 
 .header {
@@ -132,31 +130,25 @@ h3 {
         border-bottom: 1px solid #CBCBCB;
         justify-content: space-between;
     }
-
     &__navigation {
         display: flex;
         align-items: center;
     }
-
     &__nav {
         margin-left: 103px;
     }
-
     &__menu {
         display: flex;
         }
-
     &__block {
         display: flex;
         margin-left: 425px;
     }
-
     &__login {
         @include fonts(17.8px, 500);
         line-height: 150%;
         color: #606060;
     }
-
     &__btn {
         font-family: Inter;
         border-radius: 12.7px;
@@ -201,7 +193,6 @@ h3 {
             transform: scale(1.1);
         }
     }
-
     &__link {
         color: #606060;
         @include fonts(17.8px,500);
@@ -215,34 +206,31 @@ h3 {
         display: flex;
         position: relative;
     }
-
     &__info {
         display: flex;
         flex-direction: column;
     }
-
     &__image {
         padding: 30px 0px 0 90px;
         position: relative;
         &::before {
-                content: "";
-                position: absolute;
-                background:url('../img/offer/lines1.svg')no-repeat center center/contain ;
-                width: 42px;
-                height: 28px;
-                top: -60px;
-                right: -40px;
-            }
-        
-            &::after {
-                content: "";
-                position: absolute;
-                background: url('../img/offer/lines2.svg')no-repeat center center/contain;
-                width: 39px;
-                height: 37px;
-                bottom: -50px;
-                left: 35px;
-            }
+            content: "";
+            position: absolute;
+            background:url('../img/offer/lines1.svg')no-repeat center center/contain ;
+            width: 42px;
+            height: 28px;
+            top: -60px;
+            right: -40px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            background: url('../img/offer/lines2.svg')no-repeat center center/contain;
+            width: 39px;
+            height: 37px;
+            bottom: -50px;
+            left: 35px;
+        }
     }
 }
 
@@ -269,7 +257,6 @@ h3 {
             left: 0;
         }
     }
-
     &__title {
         color: #201F1F;
         @include fonts(75px,600);
@@ -290,7 +277,6 @@ h3 {
     &__title span{
         color: #5C4EAE;
     }
-
     &__block {
         @include fonts(18px, 400);
         line-height: 155.5%;
@@ -302,13 +288,11 @@ h3 {
         color: #6155AE;
         font-weight: 500;
     }
-
     &__button {
         display: flex;
         margin-bottom: 33px;
         align-items: center;
     }
-
     &__raiting {
         display: flex;
         align-items: center;
@@ -324,26 +308,21 @@ h3 {
     &__name {
         margin-right: 20px;
     }
-
     &__stars {
         display: flex;
         margin-right: 9px;
     }
-
     &__star {
         &:not(:last-child){
             margin-right: 4px;
         }
     }
 }
-
 .button-offer {
     &__btn-ghost {
         margin-left: 18px;
     }
 }
-
-
 .image {
     flex: 0 0 55%;
     &__img{
@@ -385,7 +364,6 @@ h3 {
             transform: rotate(-360deg);
         }
     }
-
     &__top {
         position: absolute;
         top: -30px;
@@ -400,7 +378,6 @@ h3 {
         transform: translate(0, 0);
         opacity: 1;
     }
-
     &__bottom {
         position: absolute;
         bottom: -15px;
@@ -431,7 +408,6 @@ h3 {
         flex-direction: column;
         align-items: center;
     }
-
     &__quantly {
         font-family: Public Sans;
         @include fonts(43.2px,700);
@@ -439,7 +415,6 @@ h3 {
         color: #fff;
         margin-bottom: 10.8px;
     }
-
     &__text {
         color: #C5BFED;
         text-align: center;
@@ -464,9 +439,6 @@ h3 {
     &__image._active{
         transform: translate(0, 0);
     }
-
-    &__img {}
-
     &__info {
         flex: 0 1 50%;
         display: flex;
@@ -484,15 +456,13 @@ h3 {
         transform: scale(0);
         opacity: 0;
         }
-        
-        &__title._active {
-            transform: scale(1);
-            opacity: 1;
-        }
-            &__title span{
+    &__title._active {
+        transform: scale(1);
+        opacity: 1;
+    }
+    &__title span{
         color: $bgBlue;
     }
-
     &__items {
         margin-bottom: 66px;
     }
@@ -528,10 +498,8 @@ h3 {
             background-color: $bgGrey;
             top: 10px;
             left: 0;
-
         }
     }
-
     &__btn {
         display: flex;
         width: 186px;
@@ -562,27 +530,23 @@ h3 {
 }
 // Restaurants--------------------------------------------------------------
 .restaurants {
-
     &__body {
         padding: 100px 0 120px;
         border-bottom: 1px solid #CBCBCB;
     }
-
     &__title span{
         color: $bgBlue;
     }
-
     &__cards {
         display: flex;
         margin-bottom: 66px;
         transition: all 1.5s ease;
-        transform: translate(-120%, 0%);
+        transform: translate(-150%, 0%);
     }
     &__cards._active{
         transition: all 1.5s ease 0.5s;
         transform: translate(0,0);
     }
-
     &__link {
         color:#ACADB9;
         font-family: Poppins;
@@ -596,7 +560,6 @@ h3 {
         margin-left: 10px;
     }
 }
-
 .cards {
     &__card {
         flex: 0 1 30.333%;
@@ -606,7 +569,6 @@ h3 {
         &:not(:last-child){
             margin-right: 30px;
         }
-   
         &:hover {
             -moz-transform: scale(1.05);
             -webkit-transform: scale(1.05);
@@ -616,7 +578,6 @@ h3 {
         }
     }
 }
-
 .card {
     &__img {
         border-radius: 30.023px 30.023px 0px 0px;
@@ -627,9 +588,6 @@ h3 {
         border-radius: 0px 0px 30.023px 30.023px ;
         padding: 11px 17px 18px 33px;
     }
-    &__body {
-        }
-    
     &__info {
         @include fonts(12.8px,400);
         font-family: Poppins;
@@ -647,17 +605,14 @@ h3 {
         color: #FB471D;
         background-color: #F7C5BA;
     }
-
     &__title {
         color: #323142;
         @include fonts(25.8px,600);
         line-height: 163%;
     }
-
     &__row {
         display: flex;
     }
-
     &__text,
     &__grade {
         color: #8E97A6;
@@ -668,11 +623,9 @@ h3 {
     &__text{
         margin-right: 6.5px;
     }
-
     &__icon {
         margin-right: 6.5px;
     }
-
     &__bookmark {
         display: block;
         margin-left: auto;
@@ -684,16 +637,13 @@ h3 {
 }
 // Dishes--------------------------------------------------------
 .dishes {
-
     &__body {
         padding: 100px 0 120px;
         border-bottom: 1px solid #CBCBCB;
     }
-
     &__title span {
         color: $bgBlue;
     }
-
     &__cards {
         margin-bottom: 65px;
         display: flex;
@@ -703,7 +653,6 @@ h3 {
     &__cards._active{
         transform: translate(0,0);
     }
-
     &__card {
         flex: 0 1 20%;
         border-radius: 34.581px;
@@ -720,8 +669,6 @@ h3 {
             transform: scale(1.05);
         }
     }
-
-
     &__link {
         color: #ACADB9;
         font-family: Poppins;
@@ -731,12 +678,10 @@ h3 {
         display: flex;
         justify-content: flex-end;
     }
-
     &__link img {
         margin-left: 10px;
     }
 }
-
 .dish {
     padding: 20px;
     &__heart {
@@ -744,13 +689,6 @@ h3 {
         margin-left: auto;
         margin-bottom: -15px;
     }
-    
-    &__img {}
-
-    &__body {
-        
-    }
-
     &__info {
         @include fonts(12.8px, 400);
         font-family: Poppins;
@@ -779,12 +717,10 @@ h3 {
         line-height: 162.5%;
         color: #323142;
     }
-
     &__row {
         display: flex;
         margin-bottom: 13px;
     }
-
     &__text,
     &__grade {
         color: #8E97A6;
@@ -792,11 +728,9 @@ h3 {
         @include fonts(19px, 400);
         line-height: 133%;
     }
-
     &__text {
         margin-right: 6.5px;
     }
-
     &__icon {
         margin-right: 6.5px;
     }
@@ -812,7 +746,6 @@ h3 {
         @include fonts(26px, 700);
         color: #323142;
     }
-
     &__add {
         border-radius: 8.93px;
         background: #323142;
@@ -821,31 +754,22 @@ h3 {
 }
 // Slider---------------------------------------------------------
 .slider {
-
     &__body {
         padding: 116px 0 110px;
     }
-
     &__title span{
         color: $bgBlue;
     }
-
     &__swiper {
         padding: 10px 15px;
     }
-
 }
-
 .swiper {
     &__cards {
         display: flex;
         padding-bottom: 20px;
     }
 }
-
-.swiper-wrapper {}
-
-
 .swiper-slide, 
 .slide {
     display: flex;
@@ -860,17 +784,14 @@ h3 {
             margin-bottom: 32px;
             display: none;
         }
-        
         &__img {
             border-radius: 41.8px;
             margin-right: 20.9px;
         }
-    
         &__info {
             display: flex;
             flex-direction: column;
         }
-    
         &__name {
             color: #030314;
             font-family: Poppins;
@@ -878,18 +799,15 @@ h3 {
             font-size: 20.893px;
             line-height: 150%;
         }
-    
         &__text {
             color: #5E5D5D;
             font-family: Quicksand;
             @include fonts(16.7px,500);
             line-height: 156%;
         }
-    
         &__icon {
             margin-left: auto;
         }
-    
         &__review {
             color: #636363;
             font-family: Poppins;
@@ -898,7 +816,6 @@ h3 {
             line-height: 145%;
             margin-bottom: 39px;
         }
-    
         &__rait {
             width: 138px;
         }
@@ -963,13 +880,11 @@ h3 {
         display: flex;
         justify-content: space-between;
     }
-
     &__info {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-
     &__text {
         color: #FFF;
         font-family: Poppins;
@@ -978,36 +893,22 @@ h3 {
         text-transform: uppercase;
         margin-bottom: 6px;
     }
-
-    &__form.error{
-       
-    }
-
     &__image {
         margin-top: 37px;
         margin-bottom: -95px;
     }
-
-    &__img {}
-
 &__img._active {
     animation: rotate 30s infinite linear;
 }
-
 @keyframes rotate {
     from {
         transform: rotate(0deg);
     }
-
     to {
         transform: rotate(-360deg);
     }
 }
-
-
-
 }
-
 .form__row{
     display: flex;
     border-radius: 10.122px;
@@ -1015,12 +916,12 @@ h3 {
     align-items: center;
     padding-right: 10px;
     width: 453px;
+    justify-content: space-between;
 }
 .form__row.error {
     border: 2px solid red;
 }
 .coupon-email {
-    flex: 1 1 auto;
     min-height: 48.4px;
     padding: 0 5px;
     border-radius: 10.122px;
@@ -1028,7 +929,6 @@ h3 {
     @include fonts(16.3px, 400);
     letter-spacing: 0.488px;
 }
-
 .coupon-btn {
     border-radius: 8.002px;
     background: $bgBlue;
@@ -1070,14 +970,12 @@ h3 {
         flex-direction: column;
         align-items: center;
     }
-
     &__title {
         color: #fff;
         font-family: Poppins;
         @include fonts(21px, 500);
        line-height: 150%;
     }
-
     &__text {
         color: #fff;
         font-family: Poppins;
@@ -1092,25 +990,19 @@ h3 {
     animation-duration: 4s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-
     @keyframes modal-open {
         0% {
             right: -100%;
         }
-
         20% {
             right: 144px;
-
         }
-
         50% {
             right: 144px;
         }
-
         80% {
             right: 144px;
         }
-
         100% {
             right: -100%;
         }
@@ -1122,59 +1014,37 @@ h3 {
     &__body {
         padding: 103px 0 81px;
     }
-
     &__top-row {
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid #d2d0d0;
         padding-bottom: 22px;
     }
-
-    &__logo {}
-
-    &__navigation {}
-
-    &__nav {
-       
-    }
-
     &__menu {
         display: flex;
     }
-
     &__down-row {
         display: flex;
         justify-content: space-between;
         padding-top: 52px;
     }
-
     &__policy {
         color: #999;
         font-family: Inter;
         @include fonts(17px,500);
         line-height: 147.1%;
     }
-
     &__social {
         display: flex;
         align-items: center;
     }
 }
-
-.logo {
-    &__link {}
-
-    &__img {}
-}
-
 .nav-menu {
     &__item {
         &:not(:last-child){
             margin-right: 70px;
         }
-       
     }
-
     &__link {
         color: #999;
         font-family: Inter;
@@ -1182,17 +1052,15 @@ h3 {
         line-height: 150%;
     }
 }
-
 .social {
     &__icon{
         position: relative;
         &:not(:last-child) {
-                margin-right: 54px;
+            margin-right: 54px;
             }
-        
-            &:last-child {
-                margin-right: 12px;
-            }
+        &:last-child {
+        margin-right: 12px;
+        }
     }
     &__name{
         position: absolute;
@@ -1218,11 +1086,6 @@ h3 {
             transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
                 }
     }
-    &__link {
-    }
-
-
-    &__img{}
 }
 .social .social__icon:hover .social__name{
     background-color: $bgBlue;
