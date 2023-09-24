@@ -5,23 +5,12 @@ const swiper = new Swiper('.slider__swiper', {
     spaceBetween: 35,
     loop: true,
     stopOnLastSlide: false,
-    // autoplay: {
-    //     delay: 3000,
-    // },
+    autoplay: {
+        delay: 3000,
+    },
 
 
     breakpoints: {
-        // 561: {
-        //     slidesPerView: 2,
-        //     slidesPerGroup: 2,
-        //     spaceBetween: 10,
-        // },
-        // 768: {
-        //     slidesPerView: 3,
-        //     slidesPerGroup: 3,
-        //     spaceBetween: 10,
-        // },
-
         561: {
             slidesPerView: 2,
             spaceBetween: 32,
@@ -48,20 +37,20 @@ const swiper = new Swiper('.slider__swiper', {
 });
 
 // Фиксированная шапка
-// window.onscroll = function () {
-//     scrollFunction()
-// };
+window.onscroll = function () {
+    scrollFunction()
+};
 
-// function scrollFunction() {
-//     let scrollPos = 200;
-//     let header = document.querySelector('.header__maxcontainer');
+function scrollFunction() {
+    let scrollPos = 180;
+    let header = document.querySelector('.header');
 
-//     if (document.body.scrollTop > scrollPos || document.documentElement.scrollTop > scrollPos) {
-//         header.classList.add('active');
-//     } else {
-//         header.classList.remove('active');
-//     }
-// }
+    if (document.body.scrollTop > scrollPos || document.documentElement.scrollTop > scrollPos) {
+        header.classList.add('active');
+    } else {
+        header.classList.remove('active');
+    }
+}
 
 // Burger
 

@@ -92,7 +92,7 @@
                             <p class="info__text">
                                 over 1000 users
                             </p>
-                            <h1 class="info__title">
+                            <h1 class="info__title _anim-items">
                                 Enjoy Foods All Over The <span>World</span>
                             </h1>
                             <h1 class="info__title info__title_mobile">
@@ -120,11 +120,11 @@
                             </div>
                         </div>
                         <div class="offer__image image">
-                            <div class="image__img">
+                            <div class="image__img _anim-items">
                                 <!-- <img src="img/offer/plate.png" alt="Plate" class="image__hero"> -->
                             </div>
-                            <img src="img/offer/chips.png" alt="" class="image__top">
-                            <img src="img/offer/chips2.png" alt="" class="image__bottom">
+                            <img src="img/offer/chips.png" alt="" class="image__top _anim-items">
+                            <img src="img/offer/chips2.png" alt="" class="image__bottom _anim-items">
                         </div>
                     </div>
                 </div>
@@ -166,14 +166,14 @@
             <section class="benefits">
                 <div class="benefits__container">
                     <div class="benefits__body">
-                        <div class="benefits__image">
+                        <div class="benefits__image _anim-items">
                             <img src="img/benefits/mobile.png" alt="telephon" class="benefits__img">
                         </div>
                         <div class="benefits__info">
-                            <h2 class="benefits__title">
+                            <h2 class="benefits__title _anim-items">
                                 Premium <span>Quality</span> For Your Health
                             </h2>
-                            <ul class="benefits__items">
+                            <ul class="benefits__items _anim-items">
                                 <li class="benefits__item">
                                     Premium quality food is made with ingredients that are packed with essential vitamins, minerals.
                                 </li>
@@ -181,7 +181,7 @@
                                     These foods promote overall wellness by support healthy digestion and boosting immunity
                                 </li>
                             </ul>
-                            <button type="button" class="benefits__btn btn">
+                            <button type="button" class="benefits__btn btn _anim-items ">
                                 <p>Download</p>
                                 <img src="img/benefits/arrow-right.svg" alt="arrow-right">
                             </button>
@@ -194,10 +194,10 @@
             <section class="restaurants">
                 <div class="restaurants__container">
                     <section class="restaurants__body">
-                        <h3 class="restaurants__title">
+                        <h3 class="restaurants__title _anim-items">
                             Our Top <span>Restaurants</span>
                         </h3>
-                        <div class="restaurants__cards cards">
+                        <div class="restaurants__cards cards _anim-items">
                             <div class="cards__card card">
                                 <img src="img/restaurant/card_1.jpg" alt="The Chicken King" class="card__img">
                                 <div class="card__block">
@@ -281,10 +281,10 @@
             <section class="dishes">
                 <div class="dishes__container">
                     <section class="dishes__body">
-                        <h3 class="dishes__title">
+                        <h3 class="dishes__title _anim-items">
                             Our Top <span>Dishes</span>
                         </h3>
-                        <div class="dishes__cards ">
+                        <div class="dishes__cards _anim-items">
                             <div class="dishes__card dish">
                                 <img src="img/dishes/heart.svg" alt="heart" class="dish__heart">
                                 <img src="img/dishes/plate_1.png" alt="Chicken Hell" class="dish__img">
@@ -555,25 +555,109 @@
                                 <div class="coupon__text">
                                     get 50%
                                 </div>
-                                <form action="#" class="coupon__form">
-                                    <input type="email" name="email" class="coupon-email" id="coupon-email" placeholder="Enter Your Email Address">
-                                    <button type="button" class="coupon-btn">
-                                        subscribe
-                                    </button>
+                                <form action="#" class="coupon__form form">
+                                    <div class="form__row">
+                                        <input type="text" name="email" class="coupon-email" id="coupon-email" placeholder="Enter Your Email Address">
+                                        <button type="submit" class="coupon-btn">
+                                            subscribe
+                                        </button>
+                                    </div>
+                                    <div class="form__error">
+                                        <p class="form__error-message error-message"></p>
+                                    </div>
                                 </form>
                             </div>
                             <div class="coupon__image">
-                                <img src="img/coupon/dish.png" alt="dish" class="coupon__img">
+                                <img src="img/coupon/dish.png" alt="dish" class="coupon__img _anim-items">
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- SECTION COUPON End -->
+            <div class="message" id="message">
+                <div class="message__info">
+                    <p class="message__title" id="message__title">
+                    </p>
+                    <p class="message__text" id="message__text">
+                    </p>
+                </div>
+            </div>
+
         </main>
         <!-- MAIN End -->
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__body">
+                    <div class="footer__top-row">
+                        <div class="footer__logo logo">
+                            <a href="#" class="logo__link">
+                                <img src="img/header/logo.png" alt="Logo" class="logo__img">
+                            </a>
+                        </div>
+                        <nav class="footer__nav">
+                            <ul class="footer__menu nav-menu">
+                                <li class="nav-menu__item">
+                                    <a href="#" class="nav-menu__link">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li class="nav-menu__item">
+                                    <a href="#" class="nav-menu__link">
+                                        Pricing
+                                    </a>
+                                </li>
+                                <li class="nav-menu__item">
+                                    <a href="#" class="nav-menu__link">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li class="nav-menu__item">
+                                    <a href="#" class="nav-menu__link">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__down-row">
+                        <div class="footer__policy">
+                            © 2023 EATLY All Rights Reserved.
+                        </div>
+                        <div class="footer__social social">
+                            <div class="social__icon">
+                                <span class="social__name">Instagram</span>
+                                <a href="#" rel="nofollow noopener noreferrer" target="_blank" class="social__link">
+                                    <img src="img/footer/insta.svg" alt="Instagram" class="social__img">
+                                </a>
+                            </div>
+                            <div class="social__icon">
+                                <span class="social__name">Linkedin</span>
+                                <a href="#" rel="nofollow noopener noreferrer" target="_blank" class="social__link">
+                                    <img src="img/footer/linkedin.svg" alt="Linkedin" class="social__img">
+                                </a>
+                            </div>
+                            <div class="social__icon">
+                                <span class="social__name">FaceBook</span>
+                                <a href="#" rel="nofollow noopener noreferrer" target="_blank" class="social__link">
+                                    <img src="img/footer/fb.svg" alt="FaceBook" class="social__img">
+                                </a>
+                            </div>
+                            <div class="social__icon">
+                                <span class="social__name">Twitter</span>
+                                <a href="#" rel="nofollow noopener noreferrer" target="_blank" class="social__link">
+                                    <img src="img/footer/twitter.svg" alt="Twitter" class="social__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/anim.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
