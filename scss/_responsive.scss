@@ -1,4 +1,4 @@
-// width: 996px - 1224px
+// width: 937px - 1224px
 @media screen and (max-width: $md) {
     // Header------------------------------------------
     .header{
@@ -879,6 +879,7 @@
         }
         &__top-row{
             flex-direction: column;
+            padding-left: 10px;
         }
         &__menu{
             flex-direction: column;

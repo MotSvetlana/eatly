@@ -94,25 +94,25 @@ body {
 }
 @media (max-width: 1224px) {
   [class*=__container] {
-    max-width: 936px;
+    min-width: 937px;
     padding: 0 20px;
   }
 }
 @media (max-width: 936px) {
   [class*=__container] {
-    max-width: 767px;
+    min-width: 768px;
     padding: 0 20px;
   }
 }
 @media (max-width: 767px) {
   [class*=__container] {
-    max-width: 560px;
+    min-width: 561px;
     padding: 0 20px;
   }
 }
 @media (max-width: 560px) {
   [class*=__container] {
-    max-width: 375px;
+    min-width: 320px;
     padding: 0 10px;
   }
 }
@@ -1938,6 +1938,7 @@ h3 {
   }
   .footer__top-row {
     flex-direction: column;
+    padding-left: 10px;
   }
   .footer__menu {
     flex-direction: column;
