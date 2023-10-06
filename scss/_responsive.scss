@@ -283,6 +283,55 @@
             @include fonts(10.49px,500);
         }
     }
+    // PAGE BLOG=======================================================================================
+    // Topic
+    .topic{
+        &__body{
+            padding-bottom: 124px;
+        }
+        &__block{
+            justify-content: space-around;
+        }
+        &__pagination{
+            margin-top: 30px;
+        }
+        &__arrow {
+            &:nth-child(1) {
+                margin-right: 56px;
+            }
+        }
+        &__arrow_left,
+        &__arrow_right{
+            height: 21px;
+            width: 32px;
+        }
+    }
+    // Questions
+    .questions{
+        &__body{
+            padding: 0 50px 158px;
+        }
+        &__row{
+            margin-bottom: 3px;
+        }
+        &__text{
+            font-size: 16px;
+        }
+        &__btn{
+            width: 21px;
+            height: 21px;
+            &::before,
+            &::after{
+                width: 10px;
+                right: 5px;
+                top: 10px;
+            }
+        }
+        &__answer{
+            font-size: 14px;
+            letter-spacing: 0.142px;
+        }
+    }
 }
 
 // width: 767px - 936px
@@ -896,4 +945,67 @@
             right: 0;
         }
     }
+    // PAGE BLOG=======================================================================================
+    // Topic
+    .topic{
+        &__block{
+            margin-top: 58px;
+        }
+        &__card{
+            width: 80%;
+            margin-bottom: 40px;
+            padding: 17px 13px 18px;
+        }
+        &__arrow_left{
+            display: none;
+        }
+        .topic-card__column p {
+            @include fonts(8px, 400);
+        }
+
+        .topic-card__column span {
+            @include fonts(11px, 500);
+        }
+
+        .topic-card__title {
+            @include fonts(14px, 600);
+            margin-bottom: 13px;
+        }
+
+        .topic-card__date {
+            @include fonts(10px, 500);
+            line-height: 197%;
+        }
+    }
+        // Questions
+        .questions{
+            &__body{
+                padding: 0 5px 100px;
+            }
+            &__title{
+                width: 215px;
+                font-size: 23px;
+                margin-bottom: 67px;
+            }
+            &__text{
+                font-size: 12.3px;
+            }
+            &__btn {
+                width: 15px;
+                height: 15px;
+
+                &::before,
+                &::after {
+                    width: 7px;
+                    right: 4px;
+                    top: 7px;
+                }
+            }
+
+            &__answer {
+                padding: 0 10px;
+                font-size: 11px;
+                letter-spacing: 0.11px;
+            }
+        }
 }

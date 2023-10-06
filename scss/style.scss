@@ -53,7 +53,7 @@ body{
             padding: 0 10px;
         }
 }
-h1,h2,h3,h4{
+h1,h2,h3,h4,h5,h6{
     font-family: 'Poppins', sans-serif;
 }
 h3 {
@@ -1096,6 +1096,12 @@ h3 {
     pointer-events: auto;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
+
+
+
+
+
+@import "_blog";
 @import "_responsive";
 
 
