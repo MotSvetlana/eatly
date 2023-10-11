@@ -1,4 +1,4 @@
-
+// Section - Frequently Asked Questions
 const rows = Array.from(document.querySelectorAll('.questions__row'));
 const answers = Array.from(document.querySelectorAll('.questions__answer'));
 

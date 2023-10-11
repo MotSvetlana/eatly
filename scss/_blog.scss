@@ -37,7 +37,7 @@
         margin-bottom: 70px;
         transition: all 0.8s ease;
         transform: scale(0);
-            opacity: 0;
+        opacity: 0;
     }
     &__card._active {
         // transform: translate(0, 0);
@@ -64,6 +64,7 @@
     }
 
     &__arrow_left {
+        display: block;
         background: url('../img/topic/left_dark.svg') no-repeat center center/contain;
         width: 45px;
         height: 30px;
@@ -83,6 +84,7 @@
     }
 
     &__arrow_right {
+        display: block;
         background: url('../img/topic/right_dark.svg') no-repeat center center/contain;
         width: 45px;
         height: 30px;
@@ -102,7 +104,7 @@
     }
 }
 
-.topic-card {
+.blog-card {
     &__img {
         margin-bottom: 21.6px;
         border-radius: 12.236px;
@@ -124,24 +126,27 @@
         display: flex;
     }
 
-    &__icon {
-        margin-right: 11.4px;
-    }
-
-    &__column p {
-        color: #8D8D8D;
-        @include fonts(11.7px, 400);
-        line-height: 150%;
-    }
-
-    &__column span {
-        @include fonts(17px, 500);
-        line-height: 153%;
-    }
 
     &__date {
         color: #B7B4B4;
     }
+}
+.login{
+    display: flex;
+    &__icon {
+            margin-right: 11.4px;
+        }
+    
+        &__column p {
+            color: #8D8D8D;
+            @include fonts(11.7px, 400);
+            line-height: 150%;
+        }
+    
+        &__column span {
+            @include fonts(17px, 500);
+            line-height: 153%;
+        }
 }
 
 // Section Questions----------------------------------------------------------------
@@ -252,3 +257,162 @@
         }
     }
 }
+
+// BLOG_PAGE================================================================================
+.blog {
+
+    &__body {
+        padding: 126px 0 191px;
+    }
+
+    &__title {
+        color: $bgDark;
+        text-align: start;
+        @include fonts(37.4px,600);
+        line-height: 119%;
+        margin-bottom: 32px;
+        transition: all 0.8s ease;
+        transform: translate(-100%, 0%);        }
+        
+        &__title._active {
+            transform: translate(0%, 0%);
+        }
+    &__block {
+        margin-bottom: 61.5px;
+    }
+
+    &__image {
+        margin-bottom: 80px;
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    &__text,
+    &__bar {
+        display: flex;
+        flex-direction: column;
+    }
+    &__bar{
+        padding-left: 47px;
+        padding-right: 14px;
+    }
+
+    &__text {
+        padding-right: 75px;
+        border-right: 1px solid #9B9B9B;
+    }
+
+    &__content{
+        &:not(:last-child){
+            margin-bottom: 95px;
+        }
+    }
+    &__btn {
+        display: flex;
+        width: 245px;
+        @include fonts(20.3px, 600);
+        line-height: 125%;
+        min-height: 80px;
+        position: relative;
+        transition: all 0.6s ease;
+        transform: scale(0);
+        opacity: 0;
+
+    }
+
+    &__btn._active {
+        transform: scale(1);
+        opacity: 1;
+        transition: all 1s ease 0.6s;
+    }
+
+    &__btn img {
+        margin-left: 15px;
+    }}
+
+
+.login {
+    &__icon {}
+
+    &__column {}
+}
+
+.content {
+    &__title {
+        color: $bgDark;
+        @include fonts(33px,600);
+        line-height: 135%;
+        margin-bottom: 35px;
+    }
+
+    &__text,
+    &__item {
+        color: $bgDark;
+        @include fonts(22px, 400);
+        line-height: 202%;
+    }
+
+    &__items {
+        margin-top: 56px;
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 20px;
+        &::before{
+            content: "";
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            position: absolute;
+            background: $bgDark;
+            top: 45%;
+            left: 0;
+        }
+    }
+}
+
+.bar {
+    &__title {
+        color: $bgDark;
+        @include fonts(33px, 600);
+        line-height: 135%;
+        margin-bottom: 34px;
+    }
+
+    &__column {}
+
+    &__card {
+        width: 299px;
+        padding: 21px 16.5px 23px;
+        border-radius: 13.552px;
+        box-shadow: 0px 0px 20px 20px  rgba(197, 197, 197, 0.25);
+        transition: all 0.8s ease;
+        transform: translate(150%,0%);
+        &:not(:last-child){
+            margin-bottom: 45px;
+        }
+    }
+    &__card._active{
+        transform: translate(0,0);
+    }
+}
+.bar .blog-card__img {
+    width: 100%;
+}
+.blog-card {
+    &__link {}
+    
+    &__img {}
+
+    &__title {}
+
+    &__row {}
+
+    &__block {}
+
+    &__date {}
+}
+
