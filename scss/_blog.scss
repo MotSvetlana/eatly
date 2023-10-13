@@ -135,6 +135,7 @@
     display: flex;
     &__icon {
             margin-right: 11.4px;
+            width: 43.7px;
         }
     
         &__column p {
@@ -284,6 +285,9 @@
     &__image {
         margin-bottom: 80px;
     }
+    &__image-mobile{
+        display: none;
+    }
     &__row{
         display: flex;
         justify-content: space-between;
@@ -333,8 +337,10 @@
     }}
 
 
-.login {
-    &__icon {}
+.blog__block .login{
+    &__icon {
+        width: 55px;
+    }
 
     &__column {}
 }
@@ -377,8 +383,8 @@
 .bar {
     &__title {
         color: $bgDark;
-        @include fonts(33px, 600);
-        line-height: 135%;
+        @include fonts(30px, 600);
+        line-height: 148%;
         margin-bottom: 34px;
     }
 
@@ -402,7 +408,21 @@
 .bar .blog-card__img {
     width: 100%;
 }
-.blog-card {
+.bar__card .blog-card__date {
+    font-size: 13.5px;
+
+}
+.bar .blog-card .login__icon{
+    width: 37.4px;
+    height: 37.4px;
+}
+.bar .blog-card .login__column p {
+    font-size: 10.1px;
+}
+.bar .blog-card .login__column span {
+    font-size: 14.5px;
+}
+.bar.blog-card {
     &__link {}
     
     &__img {}

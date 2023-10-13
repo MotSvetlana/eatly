@@ -4,10 +4,10 @@
 
 // Variable
 // $maxWidth: 1920px;
-$maxWidthContainer: 1297px;
+// $maxWidthContainer: 1297px;
 
-$md: 1224px;
-$md1: 936px;
+$md: 1259.9px;
+$md1: 895.9px;
 $md2: 767px;
 $md3: 560px;
 
@@ -34,12 +34,12 @@ body{
     overflow: hidden;
 }
 [class*="__container"] {
-    max-width: 1297px;
-    padding: 0 24px;
+    max-width: 1260px;
+    padding: 0 10px;
     margin: 0 auto;
         @media(max-width: $md) {
-            min-width: 937px;
-            padding: 0 20px;
+            max-width: 896px;
+            padding: 0 10px;
         }
         @media(max-width: $md1) {
             min-width: 768px;
@@ -51,7 +51,7 @@ body{
         }
         @media(max-width: $md3) {
             min-width: 320px;
-            padding: 0 10px;
+            padding: 0 30px;
         }
 }
 h1,h2,h3,h4,h5,h6{
@@ -540,6 +540,7 @@ h3 {
     }
     &__cards {
         display: flex;
+        justify-content: space-around;
         margin-bottom: 66px;
         transition: all 1.5s ease;
         transform: translate(-150%, 0%);
@@ -563,7 +564,7 @@ h3 {
 }
 .cards {
     &__card {
-        flex: 0 1 30.333%;
+        // flex: 0 1 30.333%;
         border-radius: 30.23px;
         box-shadow: 5.94564151763916px 71.34769439697266px 35.67384719848633px 0px rgba(229, 229, 229, 0.70);
         transition: all 0.6s ease;
