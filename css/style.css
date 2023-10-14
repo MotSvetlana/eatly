@@ -142,7 +142,7 @@ h3 {
 
 .btn {
   display: flex;
-  padding: 0 25px;
+  padding: 0 26.8px;
   min-height: 62px;
   align-items: center;
   text-align: center;
@@ -220,7 +220,7 @@ h3 {
 }
 .header__block {
   display: flex;
-  margin-left: 425px;
+  margin-left: 451px;
 }
 .header__login {
   font-size: 17.8px;
@@ -230,8 +230,9 @@ h3 {
 }
 .header__btn {
   font-family: Inter;
+  font-size: 17.8px;
   border-radius: 12.7px;
-  margin-left: 25px;
+  margin-left: 35px;
 }
 .header__burger {
   display: none;
@@ -259,7 +260,7 @@ h3 {
   overflow: hidden;
 }
 .nav-menu__item:not(:last-child) {
-  margin-right: 38px;
+  margin-right: 53.49px;
 }
 .nav-menu__item:hover {
   transform: scale(1.1);
@@ -1126,10 +1127,10 @@ h3 {
   align-items: center;
 }
 
-.nav-menu__item:not(:last-child) {
+.footer.nav-menu__item:not(:last-child) {
   margin-right: 70px;
 }
-.nav-menu__link {
+.footer.nav-menu__link {
   color: #999;
   font-family: Inter;
   font-size: 17.8px;
