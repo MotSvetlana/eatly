@@ -1231,35 +1231,45 @@ h3 {
 .topic__arrow:nth-child(1) {
   margin-right: 80px;
 }
-.topic__arrow_left {
+.topic__arrow_left.page-numbers {
   display: block;
   background: url("../img/topic/left_dark.svg") no-repeat center center/contain;
   width: 45px;
   height: 30px;
   transition: all 0.8s ease;
 }
-.topic__arrow_left:hover {
+.topic__arrow_left.page-numbers:hover {
   transform: scale(1.1);
 }
-.topic__arrow_left.active {
+.topic__arrow_left.page-numbers.current {
+  display: block;
   background: url("../img/topic/left_light.svg") no-repeat center center/contain;
   width: 45px;
   height: 30px;
+  transition: all 0.8s ease;
 }
-.topic__arrow_right {
+.topic__arrow_left.page-numbers.current:hover {
+  transform: scale(1.1);
+}
+.topic__arrow_right.page-numbers {
   display: block;
   background: url("../img/topic/right_dark.svg") no-repeat center center/contain;
   width: 45px;
   height: 30px;
   transition: all 0.8s ease;
 }
-.topic__arrow_right:hover {
+.topic__arrow_right.page-numbers:hover {
   transform: scale(1.1);
 }
-.topic__arrow_right.active {
+.topic__arrow_right.page-numbers.current {
+  display: block;
   background: url("../img/topic/right_light.svg") no-repeat center center/contain;
   width: 45px;
   height: 30px;
+  transition: all 0.8s ease;
+}
+.topic__arrow_right.page-numbers.current:hover {
+  transform: scale(1.1);
 }
 
 .blog-card__img {
@@ -1281,6 +1291,7 @@ h3 {
   display: flex;
 }
 .blog-card__date {
+  text-transform: uppercase;
   color: #B7B4B4;
 }
 
