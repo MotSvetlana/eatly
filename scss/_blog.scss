@@ -63,7 +63,7 @@
         }
     }
 
-    &__arrow_left {
+    &__arrow_left.page-numbers {
         display: block;
         background: url('../img/topic/left_dark.svg') no-repeat center center/contain;
         width: 45px;
@@ -77,13 +77,13 @@
             transform: scale(1.1);
         }
     }
-    &__arrow_left.active {
+    &__arrow_left.page-numbers.current {
         background: url('../img/topic/left_light.svg') no-repeat center center/contain;
         width: 45px;
         height: 30px;
     }
 
-    &__arrow_right {
+    &__arrow_right.page-numbers {
         display: block;
         background: url('../img/topic/right_dark.svg') no-repeat center center/contain;
         width: 45px;
@@ -97,7 +97,7 @@
                 transform: scale(1.1);
             }
     }
-    &__arrow_right.active {
+    &__arrow_right.page-numbers.current {
         background: url('../img/topic/right_light.svg') no-repeat center center/contain;
         width: 45px;
         height: 30px;
@@ -128,6 +128,7 @@
 
 
     &__date {
+        text-transform: uppercase;
         color: #B7B4B4;
     }
 }
