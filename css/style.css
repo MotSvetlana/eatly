@@ -1231,44 +1231,38 @@ h3 {
 .topic__arrow:nth-child(1) {
   margin-right: 80px;
 }
-.topic__arrow_left.page-numbers {
+.topic .page-numbers.left {
   display: block;
   background: url("../img/topic/left_dark.svg") no-repeat center center/contain;
   width: 45px;
   height: 30px;
   transition: all 0.8s ease;
 }
-.topic__arrow_left.page-numbers:hover {
+.topic .page-numbers.left:hover {
   transform: scale(1.1);
 }
-.topic__arrow_left.page-numbers.current {
-  display: block;
+.topic .page-numbers.left.current {
   background: url("../img/topic/left_light.svg") no-repeat center center/contain;
-  width: 45px;
-  height: 30px;
   transition: all 0.8s ease;
 }
-.topic__arrow_left.page-numbers.current:hover {
+.topic .page-numbers.left.current:hover {
   transform: scale(1.1);
 }
-.topic__arrow_right.page-numbers {
+.topic .page-numbers.right {
   display: block;
   background: url("../img/topic/right_dark.svg") no-repeat center center/contain;
   width: 45px;
   height: 30px;
   transition: all 0.8s ease;
 }
-.topic__arrow_right.page-numbers:hover {
+.topic .page-numbers.right:hover {
   transform: scale(1.1);
 }
-.topic__arrow_right.page-numbers.current {
-  display: block;
+.topic .page-numbers.right.current {
   background: url("../img/topic/right_light.svg") no-repeat center center/contain;
-  width: 45px;
-  height: 30px;
   transition: all 0.8s ease;
 }
-.topic__arrow_right.page-numbers.current:hover {
+.topic .page-numbers.right.current:hover {
   transform: scale(1.1);
 }
 
