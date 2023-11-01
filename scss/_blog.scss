@@ -60,13 +60,13 @@
         position: relative;
     }
 
-    .page-numbers {
+    &__page {
         position: absolute;
         width: 45px;
         height: 30px;
         top: -35px;
     }
-    .page-numbers{
+    &__page{
         &::after{
             content: '';
             background: url('../img/topic/left_dark.svg') no-repeat center center/contain;
@@ -77,13 +77,13 @@
             right: 0;
         }
     }
-    .page-numbers.current {
+    &__page.current {
         &::after {
             background: url('../img/topic/left_light.svg') no-repeat center center/contain;
         }
     }
 
-    .page-numbers.left {
+    &__page.left {
         right: 20px;
         transition: all 0.8s ease;
         &:hover{
@@ -95,7 +95,7 @@
         }
     }
 
-    .page-numbers.right {
+    &__page.right {
         right: -62px;
         transform: rotate(180deg);
         transition: all 0.8s ease;

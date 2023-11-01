@@ -326,7 +326,7 @@
         &__pagination{
             margin-top: 30px;
         }
-        .page-numbers{
+        &__page{
             &::after{
             width: 32px;
             }
@@ -1107,10 +1107,10 @@
         .blog-card__img{
             width: 100%;
         }
-        .page-numbers.left{
+        &__page.left{
             display: none;
         }
-        .page-numbers.right{
+        &__page.right{
             right: 0;
         }
         .topic-card__column p {
