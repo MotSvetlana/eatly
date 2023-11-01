@@ -1228,41 +1228,40 @@ h3 {
   display: flex;
   justify-content: center;
 }
-.topic__arrow:nth-child(1) {
-  margin-right: 80px;
+.topic__arrow {
+  position: relative;
 }
-.topic .page-numbers.left {
-  display: block;
-  background: url("../img/topic/left_dark.svg") no-repeat center center/contain;
+.topic .page-numbers {
+  position: absolute;
   width: 45px;
   height: 30px;
+  top: -35px;
+}
+.topic .page-numbers::after {
+  content: "";
+  background: url("../img/topic/left_dark.svg") no-repeat center center/contain;
+  position: absolute;
+  width: 45px;
+  height: 30px;
+  top: 0;
+  right: 0;
+}
+.topic .page-numbers.current::after {
+  background: url("../img/topic/left_light.svg") no-repeat center center/contain;
+}
+.topic .page-numbers.left {
+  right: 20px;
   transition: all 0.8s ease;
 }
 .topic .page-numbers.left:hover {
   transform: scale(1.1);
 }
-.topic .page-numbers.left.current {
-  background: url("../img/topic/left_light.svg") no-repeat center center/contain;
-  transition: all 0.8s ease;
-}
-.topic .page-numbers.left.current:hover {
-  transform: scale(1.1);
-}
 .topic .page-numbers.right {
-  display: block;
-  background: url("../img/topic/right_dark.svg") no-repeat center center/contain;
-  width: 45px;
-  height: 30px;
+  right: -62px;
+  transform: rotate(180deg);
   transition: all 0.8s ease;
 }
 .topic .page-numbers.right:hover {
-  transform: scale(1.1);
-}
-.topic .page-numbers.right.current {
-  background: url("../img/topic/right_light.svg") no-repeat center center/contain;
-  transition: all 0.8s ease;
-}
-.topic .page-numbers.right.current:hover {
   transform: scale(1.1);
 }
 
@@ -1836,11 +1835,7 @@ h3 {
   .topic__pagination {
     margin-top: 30px;
   }
-  .topic__arrow:nth-child(1) {
-    margin-right: 56px;
-  }
-  .topic__arrow_left, .topic__arrow_right {
-    height: 21px;
+  .topic .page-numbers::after {
     width: 32px;
   }
   .questions__body {
@@ -2494,8 +2489,14 @@ h3 {
     margin-bottom: 40px;
     padding: 17px 13px 18px;
   }
-  .topic__arrow_left {
+  .topic .blog-card__img {
+    width: 100%;
+  }
+  .topic .page-numbers.left {
     display: none;
+  }
+  .topic .page-numbers.right {
+    right: 0;
   }
   .topic .topic-card__column p {
     font-size: 8px;

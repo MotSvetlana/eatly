@@ -326,16 +326,12 @@
         &__pagination{
             margin-top: 30px;
         }
-        &__arrow {
-            &:nth-child(1) {
-                margin-right: 56px;
+        .page-numbers{
+            &::after{
+            width: 32px;
             }
         }
-        &__arrow_left,
-        &__arrow_right{
-            height: 21px;
-            width: 32px;
-        }
+
     }
     // Questions
     .questions{
@@ -700,6 +696,7 @@
             }
         }
     }
+    //
     // BLOGE_PAGE==============================================================
     .blog{
         &__body{
@@ -1107,8 +1104,14 @@
             margin-bottom: 40px;
             padding: 17px 13px 18px;
         }
-        &__arrow_left{
+        .blog-card__img{
+            width: 100%;
+        }
+        .page-numbers.left{
             display: none;
+        }
+        .page-numbers.right{
+            right: 0;
         }
         .topic-card__column p {
             @include fonts(8px, 400);

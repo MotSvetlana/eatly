@@ -56,18 +56,35 @@
         display: flex;
         justify-content: center;
     }
+    &__arrow{
+        position: relative;
+    }
 
-    &__arrow {
-        &:nth-child(1){
-            margin-right: 80px;
+    .page-numbers {
+        position: absolute;
+        width: 45px;
+        height: 30px;
+        top: -35px;
+    }
+    .page-numbers{
+        &::after{
+            content: '';
+            background: url('../img/topic/left_dark.svg') no-repeat center center/contain;
+            position: absolute;
+            width: 45px;
+            height: 30px;
+            top: 0;
+            right: 0;
+        }
+    }
+    .page-numbers.current {
+        &::after {
+            background: url('../img/topic/left_light.svg') no-repeat center center/contain;
         }
     }
 
     .page-numbers.left {
-        display: block;
-        background: url('../img/topic/left_dark.svg') no-repeat center center/contain;
-        width: 45px;
-        height: 30px;
+        right: 20px;
         transition: all 0.8s ease;
         &:hover{
             -moz-transform: scale(1.1);
@@ -77,23 +94,10 @@
             transform: scale(1.1);
         }
     }
-    .page-numbers.left.current {
-        background: url('../img/topic/left_light.svg') no-repeat center center/contain;
-        transition: all 0.8s ease;
-        &:hover {
-            -moz-transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            -o-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-            transform: scale(1.1);
-        }
-    }
 
     .page-numbers.right {
-        display: block;
-        background: url('../img/topic/right_dark.svg') no-repeat center center/contain;
-        width: 45px;
-        height: 30px;
+        right: -62px;
+        transform: rotate(180deg);
         transition: all 0.8s ease;
             &:hover {
                 -moz-transform: scale(1.1);
@@ -102,17 +106,6 @@
                 -ms-transform: scale(1.1);
                 transform: scale(1.1);
             }
-    }
-    .page-numbers.right.current {
-        background: url('../img/topic/right_light.svg') no-repeat center center/contain;
-        transition: all 0.8s ease;
-        &:hover {
-            -moz-transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            -o-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-            transform: scale(1.1);
-        }
     }
 }
 
